@@ -5,12 +5,15 @@
     <%= f.text_field :plan, class: 'text-input' %>
     <%= f.submit '保存' %>
   <% end %>
+<<<<<<< HEAD
+=======
 
+>>>>>>> beb79ae9c607335476c7b6c488fa3b8eae979ad6
   <div class=calendar>
     <% @week_days.each do |day| %>
       <div class='item'>
         <div class='date'>
-          <%= day[:month] %>/<%= day[:date] %>
+          <%= day[:month] %>/<%= day[:date] %>/<%= day[:wday]%>
         </div>
         <ul class='content'>
         <% if day[:plans].length != 0 %>
@@ -21,4 +24,8 @@
         </ul>
       </div>
     <% end %>
+<<<<<<< HEAD
   </div>
+=======
+  </div>
+>>>>>>> beb79ae9c607335476c7b6c488fa3b8eae979ad6
